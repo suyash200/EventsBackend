@@ -1,0 +1,59 @@
+[{
+  "_id": {
+    "$oid": "649009de31a533dfa76be3f5"
+  },
+  "createdBy": {
+    "$oid": "6490009fe6bda83adb21306d"
+  },
+  "eventName": "Vit Event",
+  "description": "an intresting events for fellow students",
+  "date": {
+    "$date": {
+      "$numberLong": "1607020200000"
+    }
+  },
+  "hosts": [
+    "some extrovert kid"
+  ],
+  "guestSpeakers": [
+    {
+      "SpeakerName": "ram pandey",
+      "description": "backend systems",
+      "topic": [
+        "backend systems"
+      ],
+      "_id": {
+        "$oid": "649009de31a533dfa76be3f6"
+      }
+    },
+    {
+      "SpeakerName": "Deepankar Bhade",
+      "description": "Golang systems",
+      "topic": [
+        "Golang systems"
+      ],
+      "_id": {
+        "$oid": "649009de31a533dfa76be3f7"
+      }
+    }
+  ],
+  "venue": "audi",
+  "categories": [
+    "technology"
+  ],
+  "mode": "online",
+  "paid": false,
+  "peoplelimit": 400,
+  "bookedtickets": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687161310249"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687161310249"
+    }
+  },
+  "__v": 0
+}]

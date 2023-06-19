@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "648fd975767b291aecd2a773"
+  },
+  "firstname": "roo",
+  "lastname": "root",
+  "email": "root@rot.com",
+  "password": "$2b$10$onLGO0VWyXpxHgDIYYBgRORlkWAwoc/33ZlAzHTSEAprvOSRu.ZrW",
+  "phone": "1234567890",
+  "gender": "Male",
+  "dob": {
+    "$date": {
+      "$numberLong": "1417372200000"
+    }
+  },
+  "interestedEventsCategory": [],
+  "roles": [
+    {
+      "$oid": "648fd90ba6c858007311d472"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6490009fe6bda83adb21306d"
+  },
+  "firstname": "roo",
+  "lastname": "root",
+  "email": "root@manager.com",
+  "password": "$2b$10$gBG5S7Vdn8L.f4UnT8iIz.fAKXrydeQC3xP8D3k4di0HbHfKP.Qhm",
+  "phone": "1234567890",
+  "gender": "Male",
+  "dob": {
+    "$date": {
+      "$numberLong": "1417372200000"
+    }
+  },
+  "interestedEventsCategory": [],
+  "roles": [
+    {
+      "$oid": "64900086e6bda83adb213069"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6490015ce6bda83adb213075"
+  },
+  "firstname": "roo",
+  "lastname": "root",
+  "email": "root@user.com",
+  "password": "$2b$10$W1p4kOWCzIZ5seQkR7bRJeGG0k0Uj.bJah4NwjaQoQxzoS4RSurCK",
+  "phone": "1234567890",
+  "gender": "Male",
+  "dob": {
+    "$date": {
+      "$numberLong": "1417372200000"
+    }
+  },
+  "interestedEventsCategory": [],
+  "roles": [
+    {
+      "$oid": "648fe3b43a408d2897f3205d"
+    }
+  ],
+  "__v": 0
+}]

@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "648fd606017477705d2e1104"
+  },
+  "name": "user",
+  "description": "permission to update ,create and delete user\n",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687148038453"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687148038453"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "648fddb10edbfd36b03856e1"
+  },
+  "name": "eventManager",
+  "description": "permission to update ,create  events and delete events and authority over events\n",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687150001491"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687150001491"
+    }
+  },
+  "__v": 0
+}]

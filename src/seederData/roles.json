@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "648fd90ba6c858007311d472"
+  },
+  "name": "admin",
+  "description": "supreme Commander",
+  "permissions": [
+    {
+      "$oid": "648fd606017477705d2e1104"
+    },
+    {
+      "$oid": "648fdea2f969eb1535e2f931"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687148811796"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687148811796"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "648fe3b43a408d2897f3205d"
+  },
+  "name": "user",
+  "description": "an avh joe",
+  "permissions": [
+    {
+      "$oid": "648fd606017477705d2e1104"
+    },
+    {
+      "$oid": "648fddb10edbfd36b03856e1"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687151540797"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687151540797"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64900086e6bda83adb213069"
+  },
+  "name": "eventManager",
+  "description": "supreme Commander",
+  "permissions": [
+    {
+      "$oid": "648fddb10edbfd36b03856e1"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687158918316"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687158918316"
+    }
+  },
+  "__v": 0
+}]
