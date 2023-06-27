@@ -47,6 +47,7 @@ export default async function GetEvents(req, res) {
     const event = await eventsModel.find();
     res.send(event);
   } catch (error) {
+    res.send(err)
     throw new Error(error);
   }
 }

@@ -8,6 +8,8 @@ export function createCategory(req, res) {
     res.status(200);
     res.send("created catefory");
   } catch (err) {
+    res.status(400);
+    res.send(err);
     console.log(err);
   }
 }
