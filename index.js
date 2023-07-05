@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import * as cluster from "cluster";
 
 //routes imports
 import authroute from "./src/routes/auth.routes.js";
@@ -17,25 +18,34 @@ import { AuthCheck } from "./src/middleware/authCheck.js";
 import { corsOptions } from "./src/config/corsConfig.js";
 import { DbConnect } from "./src/config/DbConfig.js";
 import cookieParser from "cookie-parser";
+import ClusterService from "./src/services/clusterService.js";
 
 dotenv.config();
 
 //app declaration
 var app = express();
 
-//global middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(cors(corsOptions));
-app.use(cookieParser());
-// routes declaration
+if (cluster.isPrimary) {
+  for (var i = 0; i < 13; i++) {
+    cluster.fork();
+  }
+  ClusterService(cluster)
+} else {
 
-app.use("/auth", authroute);
-app.use("/roles", AuthCheck(), roleRoute);
-app.use("/permissions", AuthCheck(), permissionRoute);
-app.use("/events", AuthCheck(), eventsRoute);
-app.use("/category", AuthCheck(), categoryRoute);
-app.use("/tickets", AuthCheck(), ticketRoute);
+  //global middleware
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
+  app.use(cors(corsOptions));
+  app.use(cookieParser());
+  // routes declaration
+
+  app.use("/auth", authroute);
+  app.use("/roles", AuthCheck(), roleRoute);
+  app.use("/permissions", AuthCheck(), permissionRoute);
+  app.use("/events", AuthCheck(), eventsRoute);
+  app.use("/category", AuthCheck(), categoryRoute);
+  app.use("/tickets", AuthCheck(), ticketRoute);
+}
 
 //dbConnection
 app.listen(4000, () => {
