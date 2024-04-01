@@ -44,10 +44,10 @@ pipeline {
         // }
     }
 
-    post {
-        always {
-            // Clean up Docker resources
-            sh 'docker-compose -f docker-compose-backend.yml down'
-        }
-    }
+    // post {
+    //     always {
+    //         // Clean up Docker resources
+    //         sh 'docker-compose -f docker-compose-backend.yml down'
+    //     }
+    // }
 }
