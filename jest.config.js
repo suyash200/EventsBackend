@@ -1,4 +1,4 @@
-export default{
+export default {
   "verbose": true,
   "roots": ["./test"],
   "modulePaths": ["./"],
