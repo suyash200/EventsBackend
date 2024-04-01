@@ -5,7 +5,7 @@ pipeline {
         stage('Build Backend') {
             steps {
                 // Checkout backend repository
-                git branch: 'main', url: 'https://github.com/suyash200/EventsBackend.git'
+                git branch: 'prod', url: 'https://github.com/suyash200/EventsBackend.git'
 
                 // Build backend Docker image
                 script {
