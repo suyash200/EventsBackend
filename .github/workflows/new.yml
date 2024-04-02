@@ -18,9 +18,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       # Step 4
-      - name: Compiling project
-        run: npm run build
-      #step-5  
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with: 
@@ -48,7 +45,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-            --application-name application-name \
-            --deployment-group-name AppDeploymentGroupName \
+            --application-name eventsBackendDeployment \
+            --deployment-group-name backendGroupName \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
