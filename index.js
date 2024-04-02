@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 app.use(cookieParser());
-console.log('hellow')
+
 // routes declaration
 
 app.get('/', (req, res) => {
