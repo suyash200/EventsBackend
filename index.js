@@ -20,6 +20,8 @@ import cookieParser from "cookie-parser";
 
 dotenv.config();
 
+
+console.log('hellow')
 //app declaration
 var app = express();
 
