@@ -27,7 +27,7 @@ jobs:
       # - name: Test
       #   run: npm test
 
- continuous-deployment:
+continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
     if: github.ref == 'refs/heads/main'
@@ -47,4 +47,4 @@ jobs:
             --application-name application-name \
             --deployment-group-name AppDeploymentGroupName \
             --deployment-config-name CodeDeployDefault.OneAtATime \
-            --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
+            --github-location repository=${{ github.repository }},commitId=${{ github.sha }}  
