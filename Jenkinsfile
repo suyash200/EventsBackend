@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy Backend') {
             steps {
                 // Deploy backend Docker containers using docker-compose-backend.yml
-                sh 'npm i'
+                sh 'npm install'
             }
         }
 
