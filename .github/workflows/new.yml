@@ -31,11 +31,11 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          username: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           script: |
             cd /path/to/your/application
             git pull origin prod
             npm install
             npm run build
-            pm2 restart your-app-nam
+            npm run dev
