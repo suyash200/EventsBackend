@@ -48,5 +48,5 @@ jobs:
             --application-name eventsBackendDeployment \
             --deployment-group-name backend \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
-            --ignore-application-stop-failures \
+            --no-ignore-application-stop-failure \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
