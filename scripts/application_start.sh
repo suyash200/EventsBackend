@@ -1,2 +1,2 @@
 cd  /home/ubuntu/EventsBackend
-npm run dev
+npm run start
