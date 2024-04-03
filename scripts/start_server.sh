@@ -1,2 +1,2 @@
-cd /home/ec2-user/EVENTSBACKEND
+cd  /home/ubuntu/EventsBackend
 npm run dev
