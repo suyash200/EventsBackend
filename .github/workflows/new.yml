@@ -46,7 +46,7 @@ jobs:
         run: |
           aws deploy create-deployment \
             --application-name eventsBackendDeployment \
-            --deployment-group-name backend \
+            --deployment-group-name trial2 \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
             --no-ignore-application-stop-failure \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
