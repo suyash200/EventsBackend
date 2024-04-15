@@ -35,7 +35,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.AWS_EC2_HOST }}
-          username: root
+          username: ubuntu
           key: ${{ secrets.AWS_SECRET_KEY_PEM }}
           script: echo hellow  
   # continuous-deployment:
