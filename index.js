@@ -30,9 +30,9 @@ app.use(cors(corsOptions));
 app.use(cookieParser());
 // routes declaration
 
-app.get('/', (req, res) => {
-  res.status(200).send('response hellow')
-})
+app.get("/", (req, res) => {
+  res.status(200).send("response hellow from branch prod");
+});
 
 app.use("/auth", authroute);
 app.use("/roles", AuthCheck(), roleRoute);
