@@ -35,12 +35,12 @@ app.get('/', (req, res) => {
   res.status(200).send('response hellow')
 })
 
-app.use("/auth", authroute);
-app.use("/roles", AuthCheck(), roleRoute);
-app.use("/permissions", AuthCheck(), permissionRoute);
-app.use("/events", AuthCheck(), eventsRoute);
-app.use("/category", AuthCheck(), categoryRoute);
-app.use("/tickets", AuthCheck(), ticketRoute);
+app.use("/api/auth", authroute);
+app.use("/api/roles", AuthCheck(), roleRoute);
+app.use("/api/permissions", AuthCheck(), permissionRoute);
+app.use("/api/events", AuthCheck(), eventsRoute);
+app.use("/api/category", AuthCheck(), categoryRoute);
+app.use("/api/tickets", AuthCheck(), ticketRoute);
 
 //dbConnection
 app.listen(4000, () => {
