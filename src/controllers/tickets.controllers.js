@@ -7,7 +7,7 @@ export async function IssueTicket(req, res) {
   try {
     const eventid = req.body.id;
     const { _id, firstname, lastname } = JSON.parse(req.cookies.userInfo);
-    const event = await eventsModel.findById("648750df0f04cc79b0238302");
+    const event = await eventsModel.findOne({eventName:req.body.eventName});
     const { bookedtickets, peoplelimit, eventName } = event;
 
     if (peoplelimit - bookedtickets === 0) {
@@ -41,7 +41,8 @@ export async function IssueTicket(req, res) {
       ])
     );
   } catch (error) {
-    throw new Error(error);
+    res.status(400).send(error.message)
+
   }
 }
 

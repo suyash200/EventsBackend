@@ -7,15 +7,15 @@ export async function CreateEvent(req, res, next) {
     });
     res.send("event created");
     res.status(200);
-    next();
   } catch (error) {
+    console.log(error)
     res.send(error.message);
   }
 }
 
 export async function EditEvent(req, res) {
   try {
-    const eventsUpdater = await eventsModel.findOneAndUpdate(
+    await eventsModel.findOneAndUpdate(
       { eventName: req.query.name },
       { $set: { eventName: req.body.name } },
       {

@@ -29,7 +29,7 @@ export function ValidateTicketSchema(req, res, next) {
   const Schema = Joi.object({
     ticketId: Joi.string().required(),
     eventName: Joi.string().required(),
-    userrole: Joi.number().min(24).max(24).required(),
+    role: Joi.string().required(),
   });
   const { error, value } = Schema.validate(req.body);
 

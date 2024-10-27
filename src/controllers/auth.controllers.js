@@ -68,6 +68,7 @@ export async function Login(req, res) {
         });
         res.cookie("access_token", JSON.stringify(jwttoken), {
           encode: Object,
+          expires: new Date(Date.now() + 8 * 3600000) //set 8 hr limit
         });
         res.status(200);
         res.send({ token: jwttoken });

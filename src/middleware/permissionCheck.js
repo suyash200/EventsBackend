@@ -18,17 +18,16 @@ export default function PermissionCheck(permission) {
       if (adminChecker) {
         next();
       } else {
-        if (user.roles[0].permissions[0].name != permission) {
-          res.status(400);
-          res.status("unauthorised");
+        console.log(user.roles[0].permissions[0].name !== permission)
+        if (user.roles[0].permissions[0].name !== permission) {
+         return res.status(401).message("unauthorised")
         } else {
-          next();
+          return next();
         }
       }
     } catch (err) {
       res.status(400);
       res.send("unauthorised");
-      throw new Error(err);
     }
   };
 }

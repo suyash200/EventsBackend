@@ -17,7 +17,7 @@ export function AuthCheck() {
       }
     } catch (error) {
       res.status(401);
-      res.send(error);
+      res.send(error.message);
     }
   };
 }
