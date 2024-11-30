@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET /event/getevent  To get events 1`] = `
+{
+  "__v": 0,
+  "_id": Any<String>,
+  "bookedtickets": 0,
+  "categories": [
+    "technology",
+  ],
+  "createdAt": "2023-06-19T07:55:10.249Z",
+  "createdBy": "6490009fe6bda83adb21306d",
+  "date": "2020-12-03T18:30:00.000Z",
+  "description": "an intresting events for fellow students",
+  "eventName": "Vit Event",
+  "guestSpeakers": [
+    {
+      "SpeakerName": "ram pandey",
+      "_id": "649009de31a533dfa76be3f6",
+      "description": "backend systems",
+      "topic": [
+        "backend systems",
+      ],
+    },
+    {
+      "SpeakerName": "Deepankar Bhade",
+      "_id": "649009de31a533dfa76be3f7",
+      "description": "Golang systems",
+      "topic": [
+        "Golang systems",
+      ],
+    },
+  ],
+  "hosts": [
+    "some extrovert kid",
+  ],
+  "mode": "online",
+  "paid": false,
+  "peoplelimit": 400,
+  "updatedAt": "2023-06-19T07:55:10.249Z",
+  "venue": "audi",
+}
+`;
+
+exports[`GEt /event/getevent 1`] = `
+{
+  "__v": 0,
+  "_id": Any<String>,
+  "bookedtickets": 0,
+  "categories": [
+    "technology",
+  ],
+  "createdAt": "2023-06-19T07:55:10.249Z",
+  "createdBy": "6490009fe6bda83adb21306d",
+  "date": "2020-12-03T18:30:00.000Z",
+  "description": "an intresting events for fellow students",
+  "eventName": "Vit Event",
+  "guestSpeakers": [
+    {
+      "SpeakerName": "ram pandey",
+      "_id": "649009de31a533dfa76be3f6",
+      "description": "backend systems",
+      "topic": [
+        "backend systems",
+      ],
+    },
+    {
+      "SpeakerName": "Deepankar Bhade",
+      "_id": "649009de31a533dfa76be3f7",
+      "description": "Golang systems",
+      "topic": [
+        "Golang systems",
+      ],
+    },
+  ],
+  "hosts": [
+    "some extrovert kid",
+  ],
+  "mode": "online",
+  "paid": false,
+  "peoplelimit": 400,
+  "updatedAt": "2023-06-19T07:55:10.249Z",
+  "venue": "audi",
+}
+`;
+
+exports[`Post /event/getevent 1`] = `
+{
+  "__v": 0,
+  "_id": Any<String>,
+  "bookedtickets": 0,
+  "categories": [
+    "technology",
+  ],
+  "createdAt": "2023-06-19T07:55:10.249Z",
+  "createdBy": "6490009fe6bda83adb21306d",
+  "date": "2020-12-03T18:30:00.000Z",
+  "description": "an intresting events for fellow students",
+  "eventName": "Vit Event",
+  "guestSpeakers": [
+    {
+      "SpeakerName": "ram pandey",
+      "_id": "649009de31a533dfa76be3f6",
+      "description": "backend systems",
+      "topic": [
+        "backend systems",
+      ],
+    },
+    {
+      "SpeakerName": "Deepankar Bhade",
+      "_id": "649009de31a533dfa76be3f7",
+      "description": "Golang systems",
+      "topic": [
+        "Golang systems",
+      ],
+    },
+  ],
+  "hosts": [
+    "some extrovert kid",
+  ],
+  "mode": "online",
+  "paid": false,
+  "peoplelimit": 400,
+  "updatedAt": "2023-06-19T07:55:10.249Z",
+  "venue": "audi",
+}
+`;

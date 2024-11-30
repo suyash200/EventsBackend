@@ -32,9 +32,9 @@ app.use(cookieParser());
 
 // routes declaration
 
-app.get('/', (req, res) => {
-  res.status(200).send('response hellow')
-})
+app.get("/", (req, res) => {
+  res.status(200).send("response hellow from branch prod");
+});
 
 app.use(rateLimiter);
 app.use("/api/auth", authroute);
